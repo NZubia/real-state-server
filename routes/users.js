@@ -10,4 +10,6 @@ router.get('/', function(req, res, next) {
 
 router.post('/create', userController.createUser);
 
+router.get('/all', userController.findUsers);
+
 module.exports = router;
